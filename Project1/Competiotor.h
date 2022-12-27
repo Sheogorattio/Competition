@@ -33,7 +33,7 @@ public:
 	double GetMaxJHeight();
 	string GetName();
 	void SetMaxJHeight(double maxJH);
-	virtual ~Competitor()=0;
+	virtual ~Competitor() = 0;
 };
 
 class Human :public Competitor
@@ -47,7 +47,7 @@ class Cat :public Competitor
 {
 public:
 	Cat(const char* _name) ;
-	 ~Cat();
+	 ~Cat() override;
 };
 
 class Robot :public Competitor

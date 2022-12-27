@@ -7,6 +7,8 @@ Competitor::Competitor(const char* _name , double st, double maxJH)
 	maxJHeight = maxJH;
 }
 
+Competitor::~Competitor() {};
+
 bool Competitor::Run(double distance)
 {
 	bool res=0;
